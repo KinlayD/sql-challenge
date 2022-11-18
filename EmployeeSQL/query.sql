@@ -1,9 +1,9 @@
 -- queries
 
 -- 1. 
-SELECT e.emp_no, last_name, first_name, sex, salary
-FROM employees AS e
-INNER JOIN salaries ON salaries.emp_no=e.emp_no;
+SELECT employees.emp_no, last_name, first_name, sex, salary
+FROM employees
+INNER JOIN salaries ON salaries.emp_no=employees.emp_no;
 
 -- 2. 
 SELECT first_name, last_name, hire_date
